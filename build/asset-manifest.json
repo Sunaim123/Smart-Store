@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58594ecb.css",
+    "main.js": "/static/js/main.f1bc289d.js",
+    "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/media/JoinUs.png": "/static/media/JoinUs.9c05ba7edb565049c2f2.png",
+    "static/media/apple-watch-ultra.png": "/static/media/apple-watch-ultra.8556737350c03d66902f.png",
+    "static/media/Red image.png": "/static/media/Red image.7be0fee4c90bdbdb3fd9.png",
+    "static/media/listing-image.png": "/static/media/listing-image.11c6b1190f755f9a65ae.png",
+    "static/media/apple-watch-se.png": "/static/media/apple-watch-se.f57280c318e1e77179ae.png",
+    "static/media/apple-watch-series-8.png": "/static/media/apple-watch-series-8.d1d884c7d0788d805464.png",
+    "static/media/left-square-bg-image.png": "/static/media/left-square-bg-image.8834dfc8fd523563d5cf.png",
+    "static/media/footer-side-red.png": "/static/media/footer-side-red.d89f7893ddac683c0819.png",
+    "static/media/right-square-bg-image.png": "/static/media/right-square-bg-image.5221f783d014748f2b90.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/store-logo.svg": "/static/media/store-logo.71752d8a46d638280b2e121cbacb8873.svg",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/dollar-logo.svg": "/static/media/dollar-logo.2aefe4501483f891de2a12873d75723a.svg",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/grid-logo.svg": "/static/media/grid-logo.ff18214b82d49433b8932bd543eb40ee.svg",
+    "index.html": "/index.html",
+    "static/media/bookmark-logo.svg": "/static/media/bookmark-logo.3859b802bbef184967cb9617544a6d97.svg",
+    "main.58594ecb.css.map": "/static/css/main.58594ecb.css.map",
+    "main.f1bc289d.js.map": "/static/js/main.f1bc289d.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58594ecb.css",
+    "static/js/main.f1bc289d.js"
+  ]
+}

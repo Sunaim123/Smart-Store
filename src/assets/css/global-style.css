@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --red: #FF3636;
+    --red-80: rgb(255 3 3 / 80%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: #FFEAC6;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    padding: 0 20px;
+}
+
+.row {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.row>* {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.head-h1 {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+.head-h2 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.head-h3 {
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.head-h4 {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.head-h5 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.head-h6 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.paragraph-text {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.paragraph-text-sm {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.z-index-0 {
+    z-index: 0;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.gradient-color {
+    /* Create the gradient. */
+    background-image: linear-gradient(90deg, rgb(255 3 3 / 80%), rgb(36 32 226 / 80%));
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.red {
+    color: var(--red);
+}
+
+.red-80 {
+    color: var(--red-80);
+}
+
+
+@media (min-width: 768px) {
+    .head-h1 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .head-h2 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    .head-h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .head-h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .head-h5 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (min-width: 992px) {
+    .head-h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .head-h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .head-h3 {
+        font-size: 36px;
+        line-height: 46px;
+    }
+}
