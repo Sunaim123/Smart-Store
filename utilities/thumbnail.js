@@ -1,0 +1,1 @@
+module.exports = "public/uploads/products/ecommerce.jpg"

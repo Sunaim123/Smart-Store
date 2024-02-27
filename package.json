@@ -1,0 +1,37 @@
+{
+  "name": "backend",
+  "version": "1.0.20",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "setup": "node ./utilities/setup.js",
+    "zone": "node ./updaters/zoneUpdater.js",
+    "count": "node ./updaters/countUpdater.js",
+    "product": "node ./updaters/productSpentUpdater.js",
+    "deal": "node ./updaters/dealSpentUpdater.js",
+    "price": "node ./updaters/priceUpdater.js",
+    "dealprice": "node ./updaters/dealUpdater.js",
+    "customer": "node ./updaters/customerUpdater.js",
+    "order": "node ./updaters/orderUpdater.js",
+    "spent": "node ./updaters/spentUpdater.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "compression": "^1.7.4",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "express": "~4.16.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.8",
+    "pg": "^8.8.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0"
+  }
+}
