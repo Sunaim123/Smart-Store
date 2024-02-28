@@ -22,16 +22,4 @@ module.exports = (router) => {
   router.patch('/order/pay', middlewares.authentication, async (req, res) => {
     res.json(await orderWrapper.payOrder(connection, req.body.id))
   })
-
-  router.patch('/order/recover', middlewares.authentication, async (req, res) => {
-    res.json(await orderWrapper.recoverOrder(connection, req.body.id))
-  })
-
-  router.patch('/order/driver/note', middlewares.authentication, async (req, res) => {
-    res.json(await orderWrapper.updateDriverNote(connection, req.body))
-  })
-
-  router.post('/order/checkout', async (req, res) => {
-    res.json(await orderWrapper.createOrder(connection, req.body))
-  })
 }

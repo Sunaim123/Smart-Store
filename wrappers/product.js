@@ -168,8 +168,6 @@ const getProduct = async (connection, id) => {
     const category = await product.findAll({
       where: {
         title: { [Op.iLike]: `%${response.title.split(' ')[0]}%` },
-        niche: response.niche,
-        category: { [Op.not]: response.category },
       },
       limit: 8
     })

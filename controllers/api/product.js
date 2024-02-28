@@ -15,7 +15,7 @@ const storage = multer.diskStorage({
 const upload = multer({ storage }).single('thumbnail')
 
 module.exports = (router) => {
-  router.post('/product', async (req, res) => {
+  router.post('/product', middlewares.authentication, async (req, res) => {
     upload(req, res, async (error) => {
       if (error) {
         res.json({ status: false, message: error })

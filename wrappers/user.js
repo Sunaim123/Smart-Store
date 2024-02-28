@@ -88,7 +88,7 @@ const getParams = (params) => {
     [Op.in]: constants.GENERAL_FUNCTIONS.TO_ARRAY(params.ids)
   }
   if (params.name) where.name = {
-    [Op.like]: `${params.name}%`
+    [Op.iLike]: `%${params.name}%`
   }
   if (params.mobile) where.mobile = {[Op.iLike]: params.mobile}
 

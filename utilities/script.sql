@@ -3,14 +3,14 @@ CREATE TABLE public.user(
   name VARCHAR(50) NOT NULL,
   username VARCHAR(50) NOT NULL UNIQUE,
   password TEXT NOT NULL,
-  mobile VARCHAR(20) NOT NULL UNIQUE
+  mobile VARCHAR(20) NOT NULL UNIQUE,
   points INTEGER,
-  role_id INTEGER REFERENCES public.role(id)
+  role_id INTEGER REFERENCES public.role(id) NOT NULL
 );
 
 CREATE TABLE public.role(
   id SERIAL PRIMARY KEY,
-  name CHARACTER VARYING(20) NOT NULL, -- super admin, admin, manager, operator
+  name CHARACTER VARYING(20) NOT NULL,
   permissions TEXT
 );
 
@@ -30,7 +30,7 @@ CREATE TABLE public.product(
     price DOUBLE PRECISION NOT NULL,
     thumbnail TEXT,
     category  INTEGER NOT NULL DEFAULT 1,
-    quantity INTEGER NOT NUL DEFAULT 1,
+    quantity INTEGER NOT NULL DEFAULT 1,
     niche VARCHAR(20) NOT NULL DEFAULT 'grocery'
 );
 
@@ -44,14 +44,6 @@ CREATE TABLE public.order(
     total DOUBLE PRECISION,
     mobile VARCHAR NOT NULL,
     address TEXT NOT NULL
-);
-
-CREATE TABLE public.order_history(
-	id SERIAL PRIMARY KEY,
-  user_id INTEGER REFERENCES public.user(id) NOT NULL,
-  product_id INTEGER REFERENCES public.product(id),
-  quantity INTEGER NOT NULL DEFAULT 1,
-  last_order TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
 CREATE TABLE public.order_lineitem(
@@ -80,6 +72,6 @@ CREATE TABLE public.feedback(
   status CHARACTER VARYING(50) NOT NULL,
   email CHARACTER VARYING(100) NOT NULL,
   problem TEXT NOT NULL,
-  result TEXT
+  result TEXT,
   order_id INTEGER NOT NULL
 );

@@ -9,7 +9,7 @@ module.exports = (router) => {
     res.json(await userWrapper.createUser(connection, req.body))
   })
 
-  router.put('/user', async (req, res) => {
+  router.put('/user', middlewares.authentication, async (req, res) => {
     res.json(await userWrapper.updateUser(connection, req.body))
   })
 
