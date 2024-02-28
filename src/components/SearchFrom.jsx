@@ -16,8 +16,7 @@ function SearchFrom() {
     const categoryRef = useRef(null)
     const nicheRef = useRef(null)
 
-    const handleSearch = (e) => {
-        // e.preventDefault()
+    const handleSearch = () => {
         const where = {}
 
         if (priceRef.current.value) where.price = priceRef.current.value

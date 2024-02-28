@@ -9,11 +9,12 @@ import DashboardHeader from "../components/DashboardHeader"
 
 const Dashboard = () => {
   const navigate = useNavigate()
-  const { token, user, permissions } = useSelector((state) => state.user)
+  const { token, user } = useSelector((state) => state.user)
   const [returns, setReturns] = useState([])
   const [feedbacks, setFeedbacks] = useState([])
   const [orders, setOrders] = useState([])
   const [products, setProducts] = useState([])
+  console.log(token);
 
   useEffect(() => {
     if (!user) navigate("/login")

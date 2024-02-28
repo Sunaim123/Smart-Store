@@ -9,7 +9,7 @@ const Users = () => {
     const navigate = useNavigate()
     const { user, token } = useSelector(state => state.user)
     const [users, setUsers] = useState([])
-    const mobileRef = useRef(null)
+    const nameRef = useRef(null)
 
     const handleNew = () => {
         navigate("/profile")
@@ -17,7 +17,7 @@ const Users = () => {
 
     const handleSearch = () => {
         const where = {}
-        if (mobileRef.current.value) where.mobile = mobileRef.current.value
+        if (nameRef.current.value) where.name = nameRef.current.value
 
         const query = new URLSearchParams(where)
         getUsers(query)
@@ -56,7 +56,7 @@ const Users = () => {
                 <div className="container-fluid">
                     <div className="d-flex justify-content-between align-items-center mb-2">
                         <h3 className="col-9 fw-bold gradient-color m-0">Users</h3>
-                        <input ref={mobileRef} type="text" className="col-2 form-control-sm ms-2 mb-2" placeholder="Search by name" /> &nbsp <FaSearch className="mb-2" onClick={handleSearch} />
+                        <input ref={nameRef} type="text" className="col-2 form-control-sm ms-2 mb-2" placeholder="Search by name" /> &nbsp; <FaSearch className="mb-2" onClick={handleSearch} />
                         {user?.role_id === 1 && (<button className="btn btn-primary" onClick={() => handleNew()}>New</button>)}
                     </div>
                 </div>

@@ -67,7 +67,6 @@ const OrderCountValue = () => {
       if (!response.status) throw new Error(response.message)
       
       setOrders(response.orders)
-      console.log(orders)
     } catch (error) {
       alert(error.message)
     }
@@ -106,7 +105,6 @@ const OrderCountValue = () => {
     if (monthRef.current) params.month = monthRef.current.value
     if (yearRef.current) params.year = yearRef.current.value
     getOrders(params)
-    console.log(params)
   }, [ordersBy, month, year])
 
   const data = {

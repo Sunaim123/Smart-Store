@@ -1,6 +1,6 @@
 import moment from "moment"
 
-export const url = window.location.origin.replace("3001", "5000")
+export const url = window.location.origin.replace("3000", "5000")
 
 export const apiUrl = `${url}/api`
 export const serviceUrl = `${url}/service`
